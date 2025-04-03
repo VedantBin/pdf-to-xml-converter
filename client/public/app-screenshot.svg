@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>PDF to XML Converter Screenshot</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradient1">
+            <stop stop-color="#2E073F" offset="0%"></stop>
+            <stop stop-color="#7A1CAC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradient2">
+            <stop stop-color="#8F87F1" offset="0%"></stop>
+            <stop stop-color="#C68EFD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="background" fill="#F8F9FA" x="0" y="0" width="800" height="500"></rect>
+        
+        <!-- Header -->
+        <rect id="header" fill="url(#gradient1)" x="0" y="0" width="800" height="60"></rect>
+        <text id="app-title" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">
+            <tspan x="20" y="40">PDF to XML Converter</tspan>
+        </text>
+        
+        <!-- Main Content Area -->
+        <g id="content" transform="translate(0, 70)">
+            <!-- Upload Section -->
+            <rect id="upload-section" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="1" x="20" y="0" width="230" height="350" rx="8"></rect>
+            <text id="upload-title" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="40" y="30">Upload PDF</tspan>
+            </text>
+            <rect id="upload-box" stroke="#AD49E1" stroke-width="2" stroke-dasharray="5,5" x="40" y="50" width="190" height="120" rx="4"></rect>
+            <text id="upload-text" font-family="Arial, sans-serif" font-size="14" fill="#666666" text-anchor="middle">
+                <tspan x="135" y="110">Drag & Drop</tspan>
+                <tspan x="135" y="130">or Click to Upload</tspan>
+            </text>
+            <rect id="convert-button" fill="url(#gradient1)" x="40" y="190" width="190" height="40" rx="4"></rect>
+            <text id="convert-text" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+                <tspan x="135" y="215">Convert to XML</tspan>
+            </text>
+            
+            <!-- XML Output Section -->
+            <rect id="output-section" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="1" x="270" y="0" width="230" height="350" rx="8"></rect>
+            <text id="output-title" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="290" y="30">XML Output</tspan>
+            </text>
+            <rect id="xml-preview" fill="#F5F7F9" stroke="#E1E4E8" stroke-width="1" x="290" y="50" width="190" height="200" rx="4"></rect>
+            <text id="xml-code" font-family="monospace" font-size="12" fill="#333333">
+                <tspan x="300" y="70">&lt;?xml version="1.0"?&gt;</tspan>
+                <tspan x="300" y="90">&lt;document&gt;</tspan>
+                <tspan x="310" y="110">&lt;page number="1"&gt;</tspan>
+                <tspan x="320" y="130">&lt;text&gt;Sample&lt;/text&gt;</tspan>
+                <tspan x="310" y="150">&lt;/page&gt;</tspan>
+                <tspan x="300" y="170">&lt;/document&gt;</tspan>
+            </text>
+            <rect id="download-button" fill="url(#gradient2)" x="290" y="270" width="190" height="40" rx="4"></rect>
+            <text id="download-text" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+                <tspan x="385" y="295">Download XML</tspan>
+            </text>
+            
+            <!-- History Section -->
+            <rect id="history-section" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="1" x="520" y="0" width="260" height="350" rx="8"></rect>
+            <text id="history-title" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">
+                <tspan x="540" y="30">Conversion History</tspan>
+            </text>
+            
+            <g id="history-item-1" transform="translate(540, 50)">
+                <rect fill="#F5F7F9" width="220" height="60" rx="4"></rect>
+                <text font-family="Arial, sans-serif" font-size="14" font-weight="medium" fill="#333333">
+                    <tspan x="10" y="25">document.pdf</tspan>
+                </text>
+                <text font-family="Arial, sans-serif" font-size="12" fill="#666666">
+                    <tspan x="10" y="45">2 hours ago • 1.2MB</tspan>
+                </text>
+            </g>
+            
+            <g id="history-item-2" transform="translate(540, 120)">
+                <rect fill="#F5F7F9" width="220" height="60" rx="4"></rect>
+                <text font-family="Arial, sans-serif" font-size="14" font-weight="medium" fill="#333333">
+                    <tspan x="10" y="25">report.pdf</tspan>
+                </text>
+                <text font-family="Arial, sans-serif" font-size="12" fill="#666666">
+                    <tspan x="10" y="45">Yesterday • 3.7MB</tspan>
+                </text>
+            </g>
+            
+            <g id="history-item-3" transform="translate(540, 190)">
+                <rect fill="#F5F7F9" width="220" height="60" rx="4"></rect>
+                <text font-family="Arial, sans-serif" font-size="14" font-weight="medium" fill="#333333">
+                    <tspan x="10" y="25">invoice.pdf</tspan>
+                </text>
+                <text font-family="Arial, sans-serif" font-size="12" fill="#666666">
+                    <tspan x="10" y="45">Last week • 0.5MB</tspan>
+                </text>
+            </g>
+        </g>
+        
+        <!-- Footer with theme toggle -->
+        <g id="footer" transform="translate(0, 460)">
+            <rect fill="#F5F7F9" x="0" y="0" width="800" height="40"></rect>
+            <text font-family="Arial, sans-serif" font-size="14" fill="#666666">
+                <tspan x="20" y="25">© 2025 PDF to XML Converter</tspan>
+            </text>
+            <g id="theme-toggle" transform="translate(720, 8)">
+                <rect fill="#FFFFFF" stroke="#E1E4E8" stroke-width="1" x="0" y="0" width="60" height="24" rx="12"></rect>
+                <circle fill="url(#gradient2)" cx="42" cy="12" r="10"></circle>
+                <text font-family="Arial, sans-serif" font-size="10" fill="#666666">
+                    <tspan x="10" y="16">Light</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

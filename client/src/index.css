@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  :root {
+    --transition-duration: 300ms;
+    --transition-timing: ease;
+    
+    /* Light Mode Colors */
+    --light-primary: #8F87F1;
+    --light-secondary: #C68EFD;
+    --light-accent: #E9A5F1;
+    --light-background: #FED2E2;
+    
+    /* Light Mode Fade Colors (for sections) */
+    --light-upload-fade: rgba(198, 142, 253, 0.15);
+    --light-xml-fade: rgba(233, 165, 241, 0.15);
+    --light-history-fade: rgba(143, 135, 241, 0.15);
+  }
+  
+  .dark {
+    /* Dark Mode Colors */
+    --dark-primary: #2E073F;
+    --dark-secondary: #7A1CAC;
+    --dark-accent: #AD49E1;
+    --dark-background: #EBD3F8;
+    
+    /* Dark Mode Fade Colors (for sections) */
+    --dark-upload-fade: rgba(122, 28, 172, 0.15);
+    --dark-xml-fade: rgba(173, 73, 225, 0.15);
+    --dark-history-fade: rgba(46, 7, 63, 0.15);
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Apply transition to all color-related properties */
+  *, *::before, *::after {
+    transition: 
+      background-color var(--transition-duration) var(--transition-timing),
+      border-color var(--transition-duration) var(--transition-timing),
+      color var(--transition-duration) var(--transition-timing),
+      fill var(--transition-duration) var(--transition-timing),
+      stroke var(--transition-duration) var(--transition-timing),
+      opacity var(--transition-duration) var(--transition-timing),
+      box-shadow var(--transition-duration) var(--transition-timing);
+  }
+}
+
+/* Custom component styling */
+@layer components {
+  .upload-section {
+    @apply bg-light-upload-fade dark:bg-dark-upload-fade rounded-lg p-4 border border-opacity-20;
+  }
+  
+  .xml-output-section {
+    @apply bg-light-xml-fade dark:bg-dark-xml-fade rounded-lg p-4 border border-opacity-20;
+  }
+  
+  .history-section {
+    @apply bg-light-history-fade dark:bg-dark-history-fade rounded-lg p-4 border border-opacity-20;
+  }
+  
+  /* XML Syntax Highlighting Colors - Light/Dark Modes */
+  .xml-tag {
+    @apply text-[var(--light-secondary)] dark:text-[var(--dark-accent)];
+  }
+  
+  .xml-attr {
+    @apply text-[var(--light-primary)] dark:text-[var(--dark-secondary)];
+  }
+  
+  /* Custom buttons with theme colors */
+  .btn-primary {
+    @apply bg-[var(--light-primary)] hover:bg-[var(--light-secondary)] dark:bg-[var(--dark-secondary)] dark:hover:bg-[var(--dark-accent)] text-white transition-colors;
+  }
+}
